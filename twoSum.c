@@ -4,13 +4,14 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize)
 {
     int i;
     int j;
-    int *ret_arr = (int *)malloc(2 *sizeof(int));
     
+    int *ret_arr = (int *)malloc(2 *sizeof(int));
     if(ret_arr == NULL)
     {
         *ret_arr = 0;
         return NULL;
     }
+ 
     i = 0;
     while (i < numsSize)
     {
@@ -28,6 +29,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize)
         }
         i++;
     }
+ 
     *returnSize = 0;
     free(ret_arr);
 
