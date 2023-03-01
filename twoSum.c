@@ -6,7 +6,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize)
     int j;
     int *ret_arr = (int *)malloc(2 *sizeof(int));
     
-	if(ret_arr == NULL)
+    if(ret_arr == NULL)
     {
         *ret_arr = 0;
         return NULL;
