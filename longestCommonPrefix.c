@@ -32,29 +32,29 @@ char	*ft_strdup(char *src)
 
 char * longestCommonPrefix(char ** strs, int strsSize)
 {
-    int index[255] = {0};
-    int i;
-    int j;
-    int k;
-    int m;
-    char *c = (char *)malloc(ft_strsize(strs[0]) * sizeof(char) + 1);
-       
-    i = 0;
-    k = 0;
-    m = 0;
-    while (strs[0][k])
-    {
-    	i = 0;
+	int index[255] = {0};
+	int i;
+	int j;
+	int k;
+	int m;
+	char *c = (char *)malloc(ft_strsize(strs[0]) * sizeof(char) + 1);
+	
+	i = 0;
+	k = 0;
+	m = 0;
+	while (strs[0][k])
+	{
+    		i = 0;
 		while (i < strsSize)
-    	{
-    		j = k;
-    		while (strs[i][j])
-    		{
-    			if (index[(int)strs[i][j]] == i)
-        	    {
+		{
+			j = k;
+			while (strs[i][j])
+			{
+				if (index[(int)strs[i][j]] == i)
+        	    		{
     				index[(int)strs[i][j]] += 1;
-        	    }
-    			break;
+				}
+				break;
 			}
 			i++;
 		}
@@ -74,6 +74,6 @@ char * longestCommonPrefix(char ** strs, int strsSize)
 	}
 	else
 		return ("");
-    char *arr = ft_strdup(c);
+	char *arr = ft_strdup(c);
 	return (arr);
 }
