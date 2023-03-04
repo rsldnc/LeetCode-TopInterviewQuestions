@@ -14,8 +14,8 @@ int	ft_strsize(char *str)
 
 char	*ft_strdup(char *src)
 {
-	int		i;
-	char	*c;
+	int i;
+	char *c;
 
 	i = 0;
 	c = (char *)malloc(ft_strsize(src) * sizeof(char) + 1);
@@ -52,7 +52,7 @@ char * longestCommonPrefix(char ** strs, int strsSize)
 			{
 				if (index[(int)strs[i][j]] == i)
         	    		{
-    				index[(int)strs[i][j]] += 1;
+    					index[(int)strs[i][j]] += 1;
 				}
 				break;
 			}
