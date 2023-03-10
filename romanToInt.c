@@ -17,7 +17,7 @@ int romanToInt(char *s)
 				num += -100;
 			else
 				num += 100;	
-		}
+		}.
 		else if(s[i] == 'L')
 			num += 50;
 		else if(s[i] == 'X')
