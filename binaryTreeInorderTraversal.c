@@ -18,7 +18,7 @@ int countNodes(struct TreeNode *root)
 
 void inorderTraversalHelper(struct TreeNode *root, int *tab, int *index)
 {
-    if (!root) 
+	if (!root) 
 		return;
 	inorderTraversalHelper(root->left, tab, index);
 	tab[(*index)++] = root->val;
@@ -36,4 +36,3 @@ int *inorderTraversal(struct TreeNode *root, int *returnSize)
 	*returnSize = size;
 	return tab;
 }
-
