@@ -12,7 +12,7 @@
 struct TreeNode *sortedArrayToBST(int *nums, int numsSize)
 {
 	if (numsSize == 0)
-        return NULL;
+        	return NULL;
 	int i = numsSize / 2;
 	struct TreeNode *bst = (struct TreeNode*)malloc(sizeof(struct TreeNode));
 	bst->val = nums[i];
