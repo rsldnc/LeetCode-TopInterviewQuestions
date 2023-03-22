@@ -8,6 +8,6 @@ uint32_t reverseBits(uint32_t n)
 		result = (result) | (n & 1);
 		n >>= 1;
 		i++;
-    }
-    return result;
+	}
+	return result;
 }
