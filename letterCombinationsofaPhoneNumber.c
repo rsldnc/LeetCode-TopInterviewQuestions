@@ -7,9 +7,9 @@ char **letterCombinations(char *digits, int *returnSize)
 {
 	if (digits[0] == '\0')
 	{
-        *returnSize = 0;
-        return NULL;
-    }
+        	*returnSize = 0;
+        	return NULL;
+	}
 	char digitletters[10][5] = {"rsl", "dnc", "abc", "def", "ghi", "jkl","mno", "pqrs", "tuv", "wxyz"};
 	int i = 0;
 	int j = 0;
