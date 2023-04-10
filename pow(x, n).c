@@ -21,5 +21,5 @@ double myPow(double x, int n)
 	}
 	if (n == -2147483648)
 		result /= c_x; 
-    return result;
+	return result;
 }
